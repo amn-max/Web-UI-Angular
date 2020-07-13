@@ -1,0 +1,40 @@
+<!-- Modified and developed By Ayush Naik -->
+<!-- https://github.com/CyberWorrior -->
+
+
+<mat-toolbar>
+  <span (click)="scrolltotop()" id="title" routerLink="">MY SITE</span>
+  <span class="example-fill-remaining-space"></span>
+  <span routerLink="" id="right">HOME</span>
+  <span routerLink="about" id="right">ABOUT</span>
+  <span routerLink="contact" id="right">CONTACT</span>
+  <span id="right" [matMenuTriggerFor]="menu">MENU</span>
+  <div class="LS">
+    <button routerLink="signin"  *ngIf="!user" class="login"><a>LOG IN</a></button>
+    <button *ngIf="user" [matMenuTriggerFor]="avatarDropDown" mat-mini-fab class="toolbar-avatar" [ngStyle]="{'background-image':'url(' + user?.photoURL +')'}"></button>
+  </div>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>PRIVACY POLICY AND DISCLAIMER</button>
+  <button mat-menu-item>ADVERTISE</button>
+</mat-menu>
+
+<mat-menu #avatarDropDown="matMenu">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{user?.displayName}}</mat-card-title>
+      <mat-card-subtitle>{{user?.email}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+  <button mat-menu-item (click)="logout()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Sign Out</span>
+  </button>
+
+  <button mat-menu-item routerLink="signin/password_id">
+    <mat-icon>settings_backup_restore</mat-icon>
+    <span>Reset Password</span>
+  </button>
+</mat-menu>

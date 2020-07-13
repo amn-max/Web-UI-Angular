@@ -1,0 +1,53 @@
+body {
+  height: fit-content;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+*{
+  padding-top: 10px;
+}
+
+
+.inner-form {
+  width: 350px;
+  margin: auto;
+  height: 600px;
+  top: 100px;
+  border: 1px solid black;
+  background: #EEF5F7;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo{
+  padding-top: 10px;
+  max-width: 100px;
+  height: auto;
+}
+
+.email{
+  width: 83%;
+}
+
+
+.forgot-button{
+  box-shadow: none;
+  border: none;
+  background: #F85B71;
+  border-radius: 100px;
+  width: 83%;
+  padding-bottom: 10px;
+  transition: all 0.5s ease-in;
+}
+
+.forgot-button:hover{
+  transform: scale(1.01);
+}
+
+.desp{
+  padding-top: 60px;
+  font-size: smaller;
+  font-weight: 1px;
+}

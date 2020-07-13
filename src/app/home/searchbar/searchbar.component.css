@@ -1,0 +1,158 @@
+/* Modified and developed By Ayush Naik
+   https://github.com/CyberWorrior
+*/
+
+body{
+  width: fit-content;
+}
+
+.container{
+  top: 180px;
+  left: 75%;
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+}
+
+
+.container div i{
+  font-size: 40px;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.container div i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #fc5c65;
+}
+
+.container div i:active{
+  background: gray;
+}
+
+.overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.overlay i{
+  color: white;
+  font-size: 50px;
+  position: relative;
+  left: 85%;
+  top: 30px;
+}
+
+.overlay i:hover{
+  color: #fc5c65;
+  cursor: pointer;
+}
+
+mat-form-field , mat-label{
+  color: white;
+}
+
+
+mat-form-field{
+  margin: auto;
+  background: #262D2E;
+  width: 600px;
+  border-radius: 80px;
+  padding: 10px 30px 0px 30px;
+}
+
+mat-input{
+  font-size: 60px;
+}
+
+.search-field{
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+mat-form-field div i{
+  position: absolute;
+  top: -10%;
+  left: 95%;
+  font-size: 25px;
+}
+
+.SearchTitles{
+  align-items: center;
+  text-align: center;
+}
+
+.SearchTitles div{
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.SearchTitles div:hover{
+  transform: scale(1.02);
+}
+
+.SearchTitles div h2{
+  margin: 0;
+  padding:10px 10px 10px 10px;
+  color: white;
+  background: #1D1E1E ;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width:500px){
+  mat-form-field{
+    width: 350px;
+  }
+
+  .SearchTitles div{
+    max-width: 350px;
+  }
+}
+
+
+@media screen and (max-width:350px){
+  mat-form-field{
+    width: 250px;
+  }
+
+  .SearchTitles div{
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width:280px){
+  mat-form-field{
+    width: 220px;
+  }
+
+  .SearchTitles div{
+    max-width: 220px;
+  }
+}
+

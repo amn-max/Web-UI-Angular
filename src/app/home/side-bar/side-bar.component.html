@@ -1,0 +1,20 @@
+<!-- Modified and developed By Ayush Naik -->
+<!-- https://github.com/CyberWorrior -->
+
+<div id="sidebar">
+  <div class="toggleButton" (click)="toggleSidebar()">
+    <i *ngIf="!sidebar" class="fas fa-bars"></i>
+    <i *ngIf="sidebar" class="fas fa-times"></i>
+  </div>
+  <ul>
+    <li (click)="toggleSidebar()" routerLink="">HOME</li>
+    <li (click)="toggleSidebar()" routerLink="about">ABOUT</li>
+    <li (click)="toggleSidebar()" routerLink="contact">CONTACT</li>
+    <li (click)="toggleSidebar()">PIVACY POLICY AND DISCLAIMER</li>
+    <li (click)="toggleSidebar()">ADVERTISE</li>
+    <li (click)="toggleSidebar()">Arduino</li>
+    <li (click)="toggleSidebar()">Python</li>
+    <li (click)="toggleSidebar()">Java</li>
+    <li (click)="toggleSidebar()">Raspberry Pi</li>
+  </ul>
+</div>

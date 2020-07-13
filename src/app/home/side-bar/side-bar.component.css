@@ -1,0 +1,105 @@
+/* Modified and developed By Ayush Naik
+   https://github.com/CyberWorrior
+*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  z-index: 4;
+}
+
+#sidebar{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  left: -100%;
+  transition: all 500ms ease-in-out  ;
+  border-radius: 10px;
+  display: none;
+}
+
+#sidebar.active{
+  left: 0px;
+}
+
+#sidebar ul li{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+
+#sidebar ul li:hover{
+  background: rgba(76, 194, 159, 1);
+}
+
+#sidebar .toggleButton{
+  position: absolute;
+  left:101%;
+  top: 7px;
+  color: white;
+}
+.toggleButton:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media screen and (max-width:630px){
+  #sidebar{
+    display: block;
+  }
+}
+
+@media screen and (max-width:630px){
+
+  #sidebar .toggleButton i{
+    font-size: 40px;
+    left: 102%;
+  }
+}
+
+
+
+@media(max-width:412px){
+  #sidebar.active .toggleButton{
+    transition: all .5s ease-in-out;
+    left: 90%;
+    top: 1px;
+  }
+  #sidebar.active .toggleButton i{
+    font-size: 40px;
+  }
+  #sidebar .toggleButton i{
+    font-size: 40px;
+    left: 102%;
+  }
+}
+
+@media(max-width:320px){
+  #sidebar .toggleButton{
+    left: 103%;
+  }
+  #sidebar.active .toggleButton{
+    transition: all .5s ease-in-out;
+    left: 85%;
+    top: 2px;
+  }
+
+  #sidebar .toggleButton i{
+    width: 40px;
+    height: 40px;
+  }
+
+  #sidebar .toggleButton i{
+    width: 40px;
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+

@@ -1,0 +1,25 @@
+<!-- Modified and developed By Ayush Naik -->
+<!-- https://github.com/CyberWorrior -->
+
+<body class="container">
+  <div (click)="openSearch()"><i class="fas fa-search"></i></div>
+</body>
+
+<div id="myNav" class="overlay">
+
+  <div (click)="closeSearch()" ><i class="fas fa-times"></i></div>
+
+  <div class="search-field">
+    <mat-form-field>
+      <mat-label>Search</mat-label>
+      <input id="input" type="text" matInput placeholder="" autocomplete="off" [(ngModel)]=InputText>
+      <div><i class="fas fa-search"></i></div>
+    </mat-form-field>
+  </div>
+
+  <div class="SearchTitles">
+    <div  *ngFor="let title of titles | filter:InputText">
+      <h2>{{title.title}}</h2>
+    </div>
+  </div>
+</div>

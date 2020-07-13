@@ -1,0 +1,35 @@
+<body>
+  <div class="container">
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <div class="txtb">
+        <mat-form-field>
+          <mat-label>Full Name :</mat-label>
+          <input type="text" matInput placeholder="Enter Your Name" value="" required #fullName>
+        </mat-form-field>
+      </div>
+
+      <div class="txtb">
+        <mat-form-field>
+          <mat-label>Email :</mat-label>
+          <input type="email" matInput placeholder="Enter Your Email" value="" required #email>
+        </mat-form-field>
+      </div>
+
+      <div class="txtb">
+        <mat-form-field>
+          <mat-label>Phone Number :</mat-label>
+          <input type="text" matInput placeholder="Enter Your Phone Number" value="" required #phoneNo>
+        </mat-form-field>
+      </div>
+
+      <div class="txtb">
+        <mat-form-field>
+          <mat-label>Message :</mat-label>
+          <textarea  required #message matInput placeholder="Enter Your Message"></textarea>
+        </mat-form-field>
+      </div>
+      <a (click)="contact(fullName.value,email.value,phoneNo.value,message.value)" class="btn">Send</a>
+    </div>
+  </div>
+</body>

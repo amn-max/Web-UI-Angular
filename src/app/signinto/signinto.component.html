@@ -1,0 +1,56 @@
+<body>
+  <div class="inner-form">
+    <br>
+    <h2>REGISTER</h2>
+    <p>Create Your Account. It's free and only takes a minute</p>
+
+    <!-- <div class="names">
+      <div class="first-name">
+        <mat-form-field>
+          <mat-label>First Name</mat-label>
+          <input type="text" matInput placeholder="First Name" required>
+        </mat-form-field>
+      </div>
+
+      <div class="Last-name">
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input type="text" matInput placeholder="Last Name" required>
+        </mat-form-field>
+      </div>
+
+    </div> -->
+
+    <div class="email">
+      <mat-form-field class="email-form">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="yourname@example.com" required #userEmail>
+      </mat-form-field>
+    </div>
+
+    <div class="password">
+      <mat-form-field class="password-form">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="password" required #userPassword>
+      </mat-form-field>
+    </div>
+
+    <div class="confirm-password">
+      <mat-form-field class="confirm-password-form">
+        <mat-label>Confirm Password</mat-label>
+        <input type="password" matInput placeholder="Confirm Password" required>
+      </mat-form-field>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="terms">
+      <label for="terms">I accept the <a>Terms of Use</a>& <a>Privacy Policy</a></label>
+    </div>
+
+    <div class="button-reg">
+      <button class="button" (click)="SignUp(userEmail.value,userPassword.value)">REGISTER</button>
+    </div>
+
+    <p class="none">Already have an account? <a routerLink="..">Sign In</a></p>
+  </div>
+</body>

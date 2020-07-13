@@ -1,0 +1,118 @@
+/* Modified and developed By Ayush Naik
+   https://github.com/CyberWorrior
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+#title{
+  cursor: pointer;
+  color: white;
+  font-family: "Merriweather",sans-serif;
+  font-size: xx-large;
+}
+
+mat-toolbar{
+  position: fixed;
+  z-index: 2;
+  background:rgba(0,0,0,0.7);
+}
+
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+
+#right{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-table;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white;
+}
+
+#right:hover{
+  background: #89CAD7;
+}
+
+button{
+  box-shadow: none;
+  border: none;
+  padding-left: 3px;
+  background: none;
+}
+
+button a{
+  text-decoration: none;
+}
+
+
+.login a{
+  text-align: center;
+  justify-content: center;
+}
+.signup a{
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.toolbar-avatar{
+  background-size: cover !important;
+  box-shadow: none;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+.LS{
+  text-align: center;
+  justify-content: center;
+}
+
+.LS button{
+  background: gray;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right:3px ;
+}
+.LS button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+@media screen and (max-width:581px){
+  mat-toolbar #right{
+    display: none;
+  }
+}
+
+@media screen and (max-width:412px){
+  #title{
+    padding-left: 30px;
+
+  }
+}
+
+@media screen and (max-width:320px){
+  #title{
+    padding-left: 35px;
+
+  }
+}
+
+

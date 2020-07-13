@@ -1,0 +1,43 @@
+<body>
+  <div class="inner-form">
+    <br><br>
+    <h2>WELCOME</h2>
+    <img class="logo" src="./assets/img/TrialLOGO.svg" alt="">
+    <div class="email">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="yourname@example.com" required #userEmail>
+      </mat-form-field>
+    </div>
+
+  <div class="password">
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="password" required #userPassword>
+    </mat-form-field>
+  </div>
+  <br>
+  <div class="LR">
+    <button class="login" (click)="SignIn(userEmail.value,userPassword.value)">LOGIN</button>
+    <br>
+  </div>
+  <div>
+    <a routerLink="password_id">Forgot Password</a>
+  </div>
+
+  <div class="noacc">
+    <p>Don't Have An Account?</p>
+    <a routerLink="signinasuser">SIGN UP</a>
+  </div>
+
+  <div class="authlogin">
+    <p>Or Sign Up using</p>
+    <div>
+      <ul>
+        <li><img (click)="LoginInGoogle()" src="./assets/img/google_96px.png" alt=""></li>
+        <li><img src="./assets/img/facebook_old_96px.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>

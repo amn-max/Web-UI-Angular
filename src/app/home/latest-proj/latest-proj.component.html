@@ -1,0 +1,12 @@
+
+<body>
+  <mat-grid-list class="gridlist" gutterSize="16px" rowHeight="fit" [cols]="col" rowHeight="3:1" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let title of titles" routerLink="articles/article1" [rowspan]="2"><div><img src="./assets/img/bulb.jpg" alt=""></div>
+      <mat-grid-tile-footer>
+        <span class="title"><p>{{title.title}}</p></span>
+        <span class="desp"><p>{{title.description}}</p></span>
+        <p class="read-more"><button>Read More</button></p>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</body>

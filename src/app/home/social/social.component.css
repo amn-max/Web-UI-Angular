@@ -1,0 +1,27 @@
+/* Modified and developed By Ayush Naik
+   https://github.com/CyberWorrior
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#socialbar{
+  position: absolute;
+  display: inline-block;
+}
+
+#socialbar ul li{
+  margin-left: 30px;
+  margin-top: 230px;
+  float: left;
+
+}
+
+#socialbar ul li:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
